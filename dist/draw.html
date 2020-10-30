@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing: Dibujar</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-xs-12">
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <em class="fab fa-firstdraft"></em> Drawing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Mostrar menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <span class="text-white" id="welcome-message"></span>
+                    <ul class="navbar-nav">
+                        <li class="nav-item" id="logout">
+                            <a class="nav-link text-danger" href="#">Cerrar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="body" class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 options-container">
+            <h5>Opciones</h5>
+            <div class="options">
+                <button class="btn btn-success" id="addCircle" title="Añadir Círculo">
+                    <em class="fas fa-circle"></em>
+                </button>
+                <button class="btn btn-danger" id="addRectangle" title="Añadir Rectángulo">
+                    <em class="fas fa-square-full"></em>
+                </button>
+                <button class="btn btn-primary" id="addTriangle" title="Añadir Triángulo">
+                    <em class="fas fa-play" data-fa-transform="rotate-270"></em>
+                </button>
+                <button class="btn btn-warning" id="pencil" title="Dibujo Libre">
+                    <em class="fas fa-pencil-alt"></em>
+                </button>
+                <button class="btn btn-info" id="selectFigure" title="Selección de Figura">
+                    <em class="fas fa-mouse-pointer"></em>
+                </button>
+                <button class="btn btn-danger" id="deleteFigure" title="Borrar Figura" disabled="true">
+                    <em class="fas fa-trash"></em>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <h5>Área de Dibujo</h5>
+            <canvas id="canvas" width="1035px" height="550px"></canvas>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <h5>Usuarios Conectados</h5>
+            <div>
+                <ul id="connected-users"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="error-container"></div>
+    <script type="application/javascript" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js">
+    </script>
+    <script type="application/javascript" src="./scripts/http/http.js"></script>
+    <script type="application/javascript" src="./scripts/error-handler/error-handler.js"></script>
+    <script type="application/javascript" src="./scripts/model/user.js"></script>
+    <script type="application/javascript" src="./scripts/script.js"></script>
+</body>
+
+</html>
