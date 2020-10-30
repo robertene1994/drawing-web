@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    background: #fff;
+    color: #000 !important;
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    height: 100%;
+}
+
+#body {
+    margin-top: 1rem;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options button {
+    margin: 1px;
+    width: 50px;
+}
+
+.canvas-container {
+    width: 100% !important;
+}
+
+#canvas {
+    border: 1px solid #000;
+    position: absolute;
+    width: 100% !important;
+}
+
+.lower-canvas,
+.upper-canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.signup-wrapper,
+.login-wrapper {
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 0 rgba(75, 75, 75, 0.4);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signup-wrapper>.logo,
+.login-wrapper>.logo {
+    margin: 2rem;
+    width: 30%;
+}
+
+.signup-wrapper>h2,
+.login-wrapper>h2 {
+    margin-bottom: 25px;
+}
+
+.signup-wrapper .form-group>button,
+.login-wrapper .form-group>button {
+    width: 100%;
+}
+
+#welcome-message {
+    margin-right: 3rem;
+}
+
+#error-container {
+    border-radius: 5px;
+    display: none;
+    height: auto;
+    max-width: 300px;
+    padding: .5em;
+    pointer-events: none;
+    position: fixed;
+    right: 4rem;
+    top: 4rem;
+    word-wrap: normal;
+}
+
+.error-container-info {
+    background: rgba(91, 192, 222, .95);
+    border: 1px solid rgba(91, 192, 222, .85);
+    box-shadow: 1px 1px 1px rgba(91, 192, 222, .85);
+}
+
+.error-container-error {
+    background: rgba(235, 126, 126, 0.85);
+    border: 1px solid rgba(235, 126, 126, 0.85);
+    box-shadow: 1px 1px 1px rgba(235, 126, 126, 0.85);
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drawing: Registrarse</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 col-xs-12">
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <em class="fab fa-firstdraft"></em> Drawing</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Mostrar menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./signup.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="body" class="row">
+        <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-6 offset-sm-3 col-xs-8 offset-xs-2 signup-wrapper">
+            <img class="logo" src="./img/logo.svg" alt="Logo de la aplicación">
+            <h2>Registrarse</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="firstName" placeholder="Nombre" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="lastName" placeholder="Apellidos" />
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" name="password"
+                        placeholder="Contraseña" />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="repeatedPassword"
+                        placeholder="Repetir contraseña" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+                <p>¿Ya tiene una cuenta?
+                    <a href="./index.html">Iniciar Sesión</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div id="error-container"></div>
+    <script type="application/javascript" src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="application/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script type="application/javascript" src="./scripts/http/http.js"></script>
+    <script type="application/javascript" src="./scripts/error-handler/error-handler.js"></script>
+    <script type="application/javascript" src="./scripts/model/user.js"></script>
+    <script type="application/javascript" src="./scripts/signup/signup.js"></script>
+</body>
+
+</html>

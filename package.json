@@ -1,0 +1,19 @@
+{
+    "name": "drawing-web",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "Robert Stefanita Ene",
+    "description": "Web application for collaborative drawing.",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "start:dev": "nodemon server.js"
+    },
+    "dependencies": {
+        "body-parser": "1.19.0",
+        "express": "4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "2.0.6"
+    }
+}
